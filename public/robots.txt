@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Allow: /api/reviews.php
 Disallow: /api/
 
 Sitemap: https://arlotech.com.ng/sitemap.xml
