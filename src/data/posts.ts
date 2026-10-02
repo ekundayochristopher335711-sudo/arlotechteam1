@@ -1,0 +1,137 @@
+export type Post = {
+  slug: string;
+  title: string;
+  excerpt: string;
+  category: string;
+  date: string;
+  readTime: string;
+  author: string;
+  featured?: boolean;
+  image?: string;
+  content: string[];
+};
+
+export const categories = [
+  "All",
+  "Web Design",
+  "SEO",
+  "Branding",
+  "Business Growth",
+  "AI",
+  "Marketing",
+  "Tutorials",
+];
+
+export const posts: Post[] = [
+  {
+    slug: "professional-website-doubles-credibility",
+    title: "How a Professional Website Can Double Your Business Credibility",
+    excerpt:
+      "Learn why your website is your strongest marketing asset and how it helps convert visitors into paying clients.",
+    category: "Business Growth",
+    date: "June 25, 2026",
+    readTime: "6 min read",
+    author: "Christopher S.",
+    featured: true,
+    content: [
+      "Your website is the first place people go when they hear about your business. Before they call you, before they visit your office, or before they ask a friend. They Google you, and what they see in the first 5 seconds decides whether they stay or leave.",
+      "A professional website does three things: it builds trust instantly, it explains what you do clearly, and it makes it easy for visitors to take the next step, whether that's calling you, filling out a form, or making a purchase.",
+      "Think about it this way: would you trust a doctor whose office was dirty and disorganised? Your website is your digital office. If it looks outdated, loads slowly, or doesn't work on phones, people assume your business is the same way.",
+      "We've seen businesses double their enquiries within weeks of launching a properly designed website. Not because of paid ads or SEO tricks, but because their site finally looked as good as their actual work.",
+      "The investment doesn't have to be massive. A clean, fast, mobile-friendly website that clearly explains what you do and how to contact you is worth more than any billboard or social media campaign.",
+      "If your business doesn't have a website yet, or if your current one looks like it was built in 2015, you're leaving money on the table every single day.",
+    ],
+  },
+  {
+    slug: "why-small-business-needs-website-2026",
+    title: "Why Every Small Business Needs a Website in 2026",
+    excerpt:
+      "Discover why relying only on social media limits your business growth and what a website can do that Instagram can't.",
+    category: "Business Growth",
+    date: "June 20, 2026",
+    readTime: "5 min read",
+    author: "Christopher S.",
+    content: [
+      "Social media is great for visibility, but it's rented land. You don't own your Instagram page. Meta does. They can change the algorithm, restrict your reach, or even ban your account overnight. Your website is the only digital asset you truly own.",
+      "A website works for you 24/7. While you're sleeping, your site is answering questions, showing off your work, and collecting leads. Try doing that with just a WhatsApp business number.",
+      "Having a website also makes you discoverable on Google. When someone searches 'plumber in Lagos' or 'cake maker near me', they find businesses with websites, not Instagram pages.",
+      "Your competitors who have websites are getting the customers who Google first and scroll Instagram second. In 2026, not having a website isn't saving you money; it's costing you customers.",
+      "You don't need something complex. A simple 5-page website with your services, contact info, and a few photos of your work is enough to start. You can always add more later.",
+    ],
+  },
+  {
+    slug: "10-seo-tips-that-work",
+    title: "10 SEO Tips That Actually Work",
+    excerpt:
+      "Simple, honest strategies to help your website rank higher on Google: no tricks, no gimmicks.",
+    category: "SEO",
+    date: "June 15, 2026",
+    readTime: "7 min read",
+    author: "Demilade G.",
+    content: [
+      "SEO doesn't have to be complicated. Most of what works comes down to common sense: make your site fast, make your content helpful, and make it easy for Google to understand what your pages are about.",
+      "1. Write real page titles, not 'Home' or 'Welcome'. Use titles like 'Web Design Company in Lagos | Arlotech'. 2. Add meta descriptions to every page; this is the text that shows up in Google results.",
+      "3. Make your site fast. Google measures page speed and ranks faster sites higher. Compress images, use modern formats like WebP, and choose good hosting. 4. Use headings properly: H1 for the main title, H2 for sections. Don't skip levels.",
+      "5. Write for humans first. Google is smart enough to understand natural language. Don't stuff keywords unnaturally. 6. Get your site on Google Search Console; it's free and tells you exactly how Google sees your site.",
+      "7. Make sure your site works perfectly on mobile: over 70% of web traffic in Nigeria is mobile. 8. Add alt text to your images; it helps Google understand them and improves accessibility.",
+      "9. Build internal links: link your pages to each other so visitors (and Google) can navigate easily. 10. Publish helpful content regularly. A blog with answers to questions your customers actually ask is the best long-term SEO strategy.",
+    ],
+  },
+  {
+    slug: "choosing-right-domain-name",
+    title: "Choosing the Right Domain Name for Your Business",
+    excerpt:
+      "Avoid common mistakes when selecting a domain: your domain name matters more than you think.",
+    category: "Branding",
+    date: "June 10, 2026",
+    readTime: "4 min read",
+    author: "Emmy N.",
+    content: [
+      "Your domain name is your digital address. It's what people type to find you, what shows up in Google, and what goes on your business card. Getting it right matters.",
+      "Keep it short and easy to spell. If you have to spell it out every time you tell someone, it's too complicated. 'arlotech.com.ng' is better than 'arlotech-web-design-solutions.com'.",
+      "Use a .com or your country domain (.com.ng, .co.uk). These are what people trust. Avoid unusual extensions like .xyz or .info; they look spammy.",
+      "Don't use hyphens or numbers unless they're part of your brand name. 'best-web-design-lagos.com' looks like a spam site, not a real business.",
+      "Check that your domain name isn't too similar to an existing big brand. You don't want legal trouble, and you don't want customers confusing you with someone else.",
+      "Register your domain for at least 2-3 years. It's cheap insurance, and some SEO experts believe longer registration signals legitimacy to Google.",
+    ],
+  },
+  {
+    slug: "website-speed-matters",
+    title: "Website Speed Matters More Than You Think",
+    excerpt:
+      "Learn how a one-second delay can reduce your conversions and what to do about it.",
+    category: "Web Design",
+    date: "June 5, 2026",
+    readTime: "4 min read",
+    author: "Demilade G.",
+    content: [
+      "Every second your website takes to load, you lose visitors. Studies show that a one-second delay in page load time reduces conversions by 7%. For a site getting 1,000 visitors a day, that's 70 potential customers gone every single day.",
+      "Most slow websites share the same problems: uncompressed images, too many fonts, cheap hosting, and bloated code. The good news is all of these are fixable.",
+      "Start with images. They're usually the biggest culprit. A single unoptimised photo can be 5MB. Compress it to 200KB and your page loads 10x faster. Use modern formats like WebP instead of PNG or JPEG.",
+      "Choose hosting that's close to your audience. If your customers are in Nigeria, hosting your site on a server in the US adds unnecessary delay. Services like Netlify and Vercel use CDNs that serve from the nearest location automatically.",
+      "Finally, don't load everything at once. Lazy-load images that are below the fold, defer non-essential scripts, and keep your CSS clean. A fast website isn't just better for users; Google literally ranks faster sites higher.",
+    ],
+  },
+  {
+    slug: "ai-tools-every-entrepreneur-should-know",
+    title: "AI Tools Every Entrepreneur Should Know in 2026",
+    excerpt:
+      "Boost your productivity using modern AI solutions for content creation, customer service, and more.",
+    category: "AI",
+    date: "June 1, 2026",
+    readTime: "5 min read",
+    author: "Christopher S.",
+    content: [
+      "AI isn't coming; it's here. And the entrepreneurs who learn to use it now will have a massive advantage over those who wait. You don't need to be technical to benefit from AI tools.",
+      "For content creation, tools like Claude and ChatGPT can help you write blog posts, social media captions, email newsletters, and even product descriptions. They won't replace your voice, but they'll save you hours of staring at a blank page.",
+      "For design, tools like Midjourney and Canva's AI features can generate logos, social media graphics, and website mockups in minutes. Perfect for brainstorming or getting a first draft before handing it to a real designer.",
+      "For customer service, AI chatbots can handle common questions 24/7. Tools like Tidio and Intercom let you set up automated responses that feel natural and actually help customers.",
+      "For productivity, tools like Notion AI, Otter.ai (for transcribing meetings), and Zapier (for automating repetitive tasks) can free up hours every week. Time you can spend on growing your business instead of admin work.",
+      "The key is to use AI as an assistant, not a replacement. It handles the repetitive work so you can focus on the creative, strategic decisions that actually grow your business.",
+    ],
+  },
+];
+
+export function getPostBySlug(slug: string): Post | undefined {
+  return posts.find((p) => p.slug === slug);
+}
